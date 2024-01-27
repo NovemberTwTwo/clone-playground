@@ -38,3 +38,17 @@ Object.prototype.isEqual = (prevValue, nextValue) => {
   }
   return true;
 };
+
+class ComponentDOM {
+  rootElement = null;
+
+  createRoot(targetElement) {
+    this.rootElement = targetElement;
+  }
+
+  render(childElement) {
+    this.rootElement.replaceChild(childElement);
+  }
+}
+
+export default ComponentDOM;
