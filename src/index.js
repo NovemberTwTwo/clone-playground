@@ -1,5 +1,4 @@
 const firstArr = [1, 2, 3];
-const secondArr = firstArr;
+const secondArr = [1, 2, 3];
 
-console.log(firstArr == secondArr);
-console.log(firstArr === secondArr);
+console.log(Object.is(firstArr, secondArr));
